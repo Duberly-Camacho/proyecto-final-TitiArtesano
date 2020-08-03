@@ -10024,7 +10024,7 @@ p {
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    padding: 6rem 0;
   }
 }
 ::-moz-selection {
@@ -10140,11 +10140,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/index/tejiendo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  
   
 }
 header.masthead .masthead-subheading {
@@ -10165,7 +10161,7 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 8rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -10334,6 +10330,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .footer {
+  background-color: rgb(153, 153, 153);
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10374,6 +10371,16 @@ body { font-family: sans-serif; }
           transition: opacity 0.4s;
 }
 
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* fade in lazy loaded image */
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
@@ -10406,21 +10413,6 @@ body { font-family: sans-serif; }
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
- 
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .icon-alfombra:before {
   content: "\e900";
 }
@@ -10447,4 +10439,28 @@ body { font-family: sans-serif; }
       margin-bottom: 2rem;
     }
     
+ }
+
+ .masthead-index{
+  background-image: url("../img/index/tejiendo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+ }
+
+ .masthead-arteHogar{
+  background-image: url("../img/produhogar/arteHogar.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+ }
+
+ .masthead-mujer{
+  background-image: url("../img/produMujer/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
  }
