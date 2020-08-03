@@ -470,7 +470,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -10442,7 +10442,7 @@ body { font-family: sans-serif; }
  }
 
  .masthead-index{
-  background-image: url("../img/index/tejiendo.jpg");
+  background-image: url("../img/tejiendo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10464,3 +10464,11 @@ body { font-family: sans-serif; }
   background-position: center center;
   background-size: cover;
  }
+
+ .masthead-hombre{
+  background-image: url("../img/arteHombre.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
