@@ -3,7 +3,10 @@
     padding: 1% 0 0 0 !important;
 }
 
-.anchoModal{
-    width: 60% !important;
+.ir-arriba{
+    display: none;
+    position: fixed;
+    bottom: 9em;
+    right: 2em;
 }
 
