@@ -470,12 +470,14 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  margin-left: 25%;
+  align-content:center;
+  max-width: 200px;
+  height: 300px;
 }
 
 .img-thumbnail {
@@ -484,7 +486,7 @@ mark,
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
-  height: auto;
+  
 }
 
 .figure {
@@ -10209,7 +10211,6 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
@@ -10447,7 +10448,7 @@ body { font-family: sans-serif; }
  }
 
  .masthead-index{
-  background-image: url("../img/index/tejiendo.jpg");
+  background-image: url("../img/tejiendo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10469,6 +10470,14 @@ body { font-family: sans-serif; }
   background-position: center center;
   background-size: cover;
  }
+
+ .masthead-hombre{
+  background-image: url("../img/arteHombre.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
  .btn.btn-round {
   border-radius: 30px;
