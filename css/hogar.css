@@ -1,0 +1,12 @@
+.subtitulos{
+    margin: 1% !important;
+    padding: 1% 0 0 0 !important;
+}
+
+.ir-arriba{
+    display: none;
+    position: fixed;
+    bottom: 9em;
+    right: 2em;
+}
+
