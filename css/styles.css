@@ -10481,6 +10481,39 @@ color: #3a7999;
 box-shadow: inset 0 0 0 3px #3a7999;}
 
 .dropdownContact{
-
   background-color: white;
+}
+
+.subtitulos{
+  margin: 1% !important;
+  padding: 1% 0 0 0 !important;
+}
+
+.ir-arriba{
+  display: none;
+  position: fixed;
+  bottom: 9em;
+  right: 2em;
+}
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.42857;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  
+  border-radius: 35px;
+  font-size: 40px;
+  line-height: 1.33;
+  color: aliceblue;
+  border-color: aliceblue;
 }
