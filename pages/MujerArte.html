@@ -38,7 +38,7 @@
     <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../img/index/Logo.png" alt="LogoTiti" style="height: 7rem;" /></a>
+            <a class="navbar-brand js-scroll-trigger" href="../index.html"><img src="../img/index/Logo.png" alt="LogoTiti" style="height: 7rem;" /></a>
                         
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -66,7 +66,6 @@
 
 
                     <li class="nav-item dropdown">
-                        
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" >
                             Moda Mujeres
                         </a>
@@ -81,9 +80,22 @@
                             
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Moda Hombres</a></li>
+
                     <li class="nav-item dropdown">
-                        
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" >
+                            Moda Hombres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class=" nav-link js-scroll-trigger" href="ArteHombre.html">HOMBRES</a>
+                            <div class="dropdown-divider"></div>
+                            <a class=" nav-link js-scroll-trigger" href="ArteHombre.html#bufandas">Bufandas</a>
+                            <a class=" nav-link js-scroll-trigger" href="ArteHombre.html#mochilas">Mochilas</a>
+                            <a class=" nav-link js-scroll-trigger" href="ArteHombre.html#sombreros">Sombreros</a> 
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">                        
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" >
                             Arte Hogar
                         </a>                        
@@ -96,6 +108,12 @@
                             <a class=" nav-link js-scroll-trigger" href="./ArteHogar.html#jarrones">Jarrones</a>                                                                   
                             
                         </div>
+                    </li>
+
+                    <li class="nav-item">                            
+                        <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();"><i class="far fa-user-circle" ></i></button>                                     
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -116,440 +134,480 @@
 
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Accesorios para Mujer</h2>
-                    <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano y dale un toque de arte a tu cotidianidad.</h3>
-                </div>
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Accesorios para Mujer</h2>
+                        <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano y dale un toque de arte a tu cotidianidad.</h3>
+                    </div>
 
-             <!-- Mostrando subcategorías de arte para mujeres -->    
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link nav-link js-scroll-trigger"  href="#Bolsos">
-                                <img  class="img-responsive img-thumbnail" src="https://i.ibb.co/R45BDZg/Bolso3-1.jpg " width="180 alt="Bolso3-1"    />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolsos</div>
-                                <div class="portfolio-caption-subheading text-muted">Uno nunca es suficiente</div>
-                            </div>
-                                                        
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link nav-link js-scroll-trigger"  href="#Bufandas">
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/K2v6FZ0/Bufanda1-1.jpg" width="180 alt="Bufanda1-1"  />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bufandas</div>
-                                <div class="portfolio-caption-subheading text-muted">Para el frio, abrigate con arte</div>
+        <!-- Mostrando subcategorías de arte para mujeres -->    
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link nav-link js-scroll-trigger"  href="#Bolsos">
+                                    <img  class="img-responsive img-thumbnail" src="https://i.ibb.co/R45BDZg/Bolso3-1.jpg " width="180" alt="Bolso3-1"/>
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolsos</div>
+                                    <div class="portfolio-caption-subheading text-muted">Uno nunca es suficiente</div>
+                                </div>
+                                                            
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link nav-link js-scroll-trigger"  href="#Collares">
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/JBCCs7H/Collar1-1.jpg" width="180 alt="Collar1-1"   />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Collares</div>
-                                <div class="portfolio-caption-subheading text-muted">Look de leyendas</div>
+                        <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link nav-link js-scroll-trigger"  href="#Bufandas">
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/K2v6FZ0/Bufanda1-1.jpg" width="180 alt="Bufanda1-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bufandas</div>
+                                    <div class="portfolio-caption-subheading text-muted">Para el frio, abrigate con arte</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link nav-link js-scroll-trigger"  href="#Pulseras">
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/jzZfVmn/a-Pulsera1-2.jpg" width="180 alt="a-Pulsera1-2"  />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulseras</div>
-                                <div class="portfolio-caption-subheading text-muted">Lleva la historia en tus manos</div>
+                        <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link nav-link js-scroll-trigger"  href="#Collares">
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/JBCCs7H/Collar1-1.jpg" width="180" alt="Collar1-1"   />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Collares</div>
+                                    <div class="portfolio-caption-subheading text-muted">Look de leyendas</div>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link nav-link js-scroll-trigger"  href="#Pulseras">
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/jzZfVmn/a-Pulsera1-2.jpg" width="180" alt="a-Pulsera1-2"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulseras</div>
+                                    <div class="portfolio-caption-subheading text-muted">Lleva la historia en tus manos</div>
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
-                   
-                </div>
-            </div>
-        </section>
-        <!-- Portafolio por categoria de producto -->
+                
+        
+    <!-- Portafolio por categoria de producto -->
 
         <!-- Categoria Bolsos -->
-        <section class="page-section bg-light" id="Bolsos"  tabindex="-1" role="dialog" aria-hidden="true">
-            <!-- <i class="fas fa-times mr-1"></i> -->
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Bolsos</h2>
-                    <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
-                </div>
-                <div class="row">
-                   <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img  class="img-fluid img-thumbnail" src="https://i.ibb.co/xJ54j1D/Bolso1-1.jpg" alt="Bolso1-1" border="0"  alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Tulipan</div>
-                                <div class="portfolio-caption-subheading text-muted">Ríe</div>
-                            </div>
-                            
-                        </div>
+
+            <section class="page-section bg-light" id="Bolsos">
+                
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Bolsos</h2>
+                        <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
                     </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+
+                    <div class="row">
+
+                    <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img  class="img-responsive img-thumbnail" src="https://i.ibb.co/xJ54j1D/Bolso1-1.jpg" alt="Bolso1-1"/>
+                                </a>
+
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Tulipan</div>
+                                    <div class="portfolio-caption-subheading text-muted">Rie</div>
                                 </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/1TSrLyY/Bolso2-1.jpg" alt="Bolso2-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Mariposa</div>
-                                <div class="portfolio-caption-subheading text-muted">Siente</div>
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+
+
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/1TSrLyY/Bolso2-1.jpg" alt="Bolso2-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Mariposa</div>
+                                    <div class="portfolio-caption-subheading text-muted">Siente</div>
                                 </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/R45BDZg/Bolso3-1.jpg" alt="Bolso3-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Brunellia</div>
-                                <div class="portfolio-caption-subheading text-muted">Sueña</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/R45BDZg/Bolso3-1.jpg" alt="Bolso3-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Brunellia</div>
+                                    <div class="portfolio-caption-subheading text-muted">Sueña</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/HzrfwLv/Bolso4-1.jpg" alt="Bolso4-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Citrina</div>
+                                    <div class="portfolio-caption-subheading text-muted">Inspira</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/T23gS8F/Bolso5-1.jpg" alt="Bolso5-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Orquídea</div>
+                                    <div class="portfolio-caption-subheading text-muted">Crea</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/wz1yLjK/Bolso6-1.jpg" alt="Bolso6-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Clattleya</div>
+                                    <div class="portfolio-caption-subheading text-muted">Sonríe</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/t3LqPrw/Bolso7-2.jpg" alt="" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bolso Cruziana</div>
+                                    <div class="portfolio-caption-subheading text-muted">Diseña</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/HzrfwLv/Bolso4-1.jpg" alt="Bolso4-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Citrina</div>
-                                <div class="portfolio-caption-subheading text-muted">Inspira</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/T23gS8F/Bolso5-1.jpg" alt="Bolso5-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Orquídea</div>
-                                <div class="portfolio-caption-subheading text-muted">Crea</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/wz1yLjK/Bolso6-1.jpg" alt="Bolso6-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Clattleya</div>
-                                <div class="portfolio-caption-subheading text-muted">Sonríe</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/t3LqPrw/Bolso7-2.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bolso Cruziana</div>
-                                <div class="portfolio-caption-subheading text-muted">Diseña</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+                
+            </section>
+            
         <!-- Categoria Bufandas -->
 
-        <section class="page-section bg-light" id="Bufandas">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Bufandas</h2>
-                    <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
+            <section class="page-section bg-light" id="Bufandas">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Bufandas</h2>
+                        <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/K2v6FZ0/Bufanda1-1.jpg" alt="Bufanda1-1" border="0" alt="#" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bufanda Victoria</div>
+                                    <div class="portfolio-caption-subheading text-muted">Motiva</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/BnHD8gV/Bufanda2-1.jpg" alt="Bufanda2-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bufanda Clavel</div>
+                                    <div class="portfolio-caption-subheading text-muted">Guerrera</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/vP4RGqD/Bufanda3-1.jpg" alt="Bufanda3-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bufandas Passiflora</div>
+                                    <div class="portfolio-caption-subheading text-muted">Haz leyenda</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/vQWpsCk/Bufanda4-1.jpg" alt="Bufanda4-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bufanda Pasión</div>
+                                    <div class="portfolio-caption-subheading text-muted">Emprende</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/cyhZRbv/Gorro1-1.jpg" alt="Gorro1-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Gorro Nativa</div>
+                                    <div class="portfolio-caption-subheading text-muted">Lucete</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/CVr4w3H/Gorro2-1.jpg" alt="Gorro2-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Gorro Pulcherima</div>
+                                    <div class="portfolio-caption-subheading text-muted">Brilla</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/K2v6FZ0/Bufanda1-1.jpg" alt="Bufanda1-1" border="0" alt="#" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bufanda Victoria</div>
-                                <div class="portfolio-caption-subheading text-muted">Motiva</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/BnHD8gV/Bufanda2-1.jpg" alt="Bufanda2-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bufanda Clavel</div>
-                                <div class="portfolio-caption-subheading text-muted">Guerrera</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/vP4RGqD/Bufanda3-1.jpg" alt="Bufanda3-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bufandas Passiflora</div>
-                                <div class="portfolio-caption-subheading text-muted">Haz leyenda</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/vQWpsCk/Bufanda4-1.jpg" alt="Bufanda4-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Bufanda Pasión</div>
-                                <div class="portfolio-caption-subheading text-muted">Emprende</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/cyhZRbv/Gorro1-1.jpg" alt="Gorro1-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Gorro Nativa</div>
-                                <div class="portfolio-caption-subheading text-muted">Lucete</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/CVr4w3H/Gorro2-1.jpg" alt="Gorro2-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Gorro Pulcherima</div>
-                                <div class="portfolio-caption-subheading text-muted">Brilla</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        
+            
         <!-- Categoria Collares -->
 
-        <section class="page-section bg-light" id="Collares">
-            <div class="container">>
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Collares</h2>
-                    <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
+            <section class="page-section bg-light" id="Collares">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Collares</h2>
+                        <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/JBCCs7H/Collar1-1.jpg" alt="Collar1-1" border="0"  alt="#" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Collar Cyca</div>
+                                    <div class="portfolio-caption-subheading text-muted">Lúcete</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/zZw04NJ/Collar2-1.jpg" alt="Collar2-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Collar Lauren</div>
+                                    <div class="portfolio-caption-subheading text-muted">Maravilla</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/5kVzWD3/Collar3-1.jpg" alt="Collar3-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Collar Bromelia</div>
+                                    <div class="portfolio-caption-subheading text-muted">Deslumbra</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail"  src="https://i.ibb.co/1mb0Jt1/Collar4-1.jpg" alt="Collar4-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Collar Canaria</div>
+                                    <div class="portfolio-caption-subheading text-muted">Regia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/JBCCs7H/Collar1-1.jpg" alt="Collar1-1" border="0"  alt="#" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Collar Cyca</div>
-                                <div class="portfolio-caption-subheading text-muted">Lúcete</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/zZw04NJ/Collar2-1.jpg" alt="Collar2-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Collar Lauren</div>
-                                <div class="portfolio-caption-subheading text-muted">Maravilla</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/5kVzWD3/Collar3-1.jpg" alt="Collar3-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Collar Bromelia</div>
-                                <div class="portfolio-caption-subheading text-muted">Deslumbra</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail"  src="https://i.ibb.co/1mb0Jt1/Collar4-1.jpg" alt="Collar4-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Collar Canaria</div>
-                                <div class="portfolio-caption-subheading text-muted">Regia</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
         <!-- Categoria Pulseras -->
 
-        <section class="page-section bg-light" id="Pulseras">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Pulseras</h2>
-                    <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
+            <section class="page-section bg-light" id="Pulseras">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Pulseras</h2>
+                        <h3 class="section-subheading text-muted">Encuentra una pieza original, hecha a mano, y dale un toque de arte a tu cotidianidad.</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/3m14LzY/a-Pulsera1-1.jpg" alt="a-Pulsera1-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulsera Venus</div>
+                                    <div class="portfolio-caption-subheading text-muted">Resplandece</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/6sK2WkH/a-Pulsera10-1.jpg" alt="a-Pulsera10-1"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulsera Palma</div>
+                                    <div class="portfolio-caption-subheading text-muted">Lógralo</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/0JMJfcB/a-Pulsera7-1.jpg" alt="a-Pulsera7-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulseras Caoba</div>
+                                    <div class="portfolio-caption-subheading text-muted">Disfruta</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/HDpw9Cm/a-Pulsera5-1.jpg" alt="a-Pulsera5-1" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulsera Ébano</div>
+                                    <div class="portfolio-caption-subheading text-muted">Baila</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/km01HGf/a-Pulsera2-1.jpg" alt="a-Pulsera2-1"/>
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulsera Cyrilla</div>
+                                    <div class="portfolio-caption-subheading text-muted">Goza</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-3">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/gV5wJx5/a-Pulsera6-3.jpg" alt="a-Pulsera6-3"  />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Pulsera Nutans</div>
+                                    <div class="portfolio-caption-subheading text-muted">Siente</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/3m14LzY/a-Pulsera1-1.jpg" alt="a-Pulsera1-1"  />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulsera Venus</div>
-                                <div class="portfolio-caption-subheading text-muted">Resplandece</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/6sK2WkH/a-Pulsera10-1.jpg" alt="a-Pulsera10-1"  />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulsera Palma</div>
-                                <div class="portfolio-caption-subheading text-muted">Lógralo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/0JMJfcB/a-Pulsera7-1.jpg" alt="a-Pulsera7-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulseras Caoba</div>
-                                <div class="portfolio-caption-subheading text-muted">Disfruta</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/HDpw9Cm/a-Pulsera5-1.jpg" alt="a-Pulsera5-1" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulsera Ébano</div>
-                                <div class="portfolio-caption-subheading text-muted">Baila</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/km01HGf/a-Pulsera2-1.jpg" alt="a-Pulsera2-1" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulsera Cyrilla</div>
-                                <div class="portfolio-caption-subheading text-muted">Goza</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/gV5wJx5/a-Pulsera6-3.jpg" alt="a-Pulsera6-3" border="0" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Pulsera Nutans</div>
-                                <div class="portfolio-caption-subheading text-muted">Siente</div>
-                            </div>
-                        </div>
-                    </div>
+            </section>
+        </section>
+    <!-- BOTON CONTACTO-->
+             
+            <div class="dropup fixed-bottom ">
+                <button class="btn btn-info btn-fab btn-round dropdown-toggle  mb-2 mr-2 float-right" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-comments"></i>
+                </button>
+                <div class="dropdown-menu dropdownContact mr-3">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <h4>Contactanos!</h4>
+                            <p>Escribenos y cuentanos tus dudas o sugerencias.</p>
+                          </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Nombres</label>
+                        <input type="name" class="form-control" id="nombresCliente" >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Apellidos</label>
+                        <input type="lastname" class="form-control" id="apellClientes" >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Correo Electronico</label>
+                        <input type="email" class="form-control" id="correoCliente"placeholder="email@ejemplo.com">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Comentarios *" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                    
                 </div>
             </div>
-        </section>
-        <!-- Botón para ir hacia arriba en la página -->
+    
+    <!-- Botón para ir hacia arriba en la página -->
 
         <span class="ir-arriba">
 
@@ -558,7 +616,8 @@
                 Subir
             </button>
         </span>      
-        <!-- Footer-->
+
+<!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
@@ -577,11 +636,79 @@
                 </div>
             </div>
         </footer>
+
+        <!-- LOGIN-->
+
+        <div class="modal fade login" id="loginModal">
+            <div class="modal-dialog login animated">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ingresar con...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="box">
+                        <div class="content">
+                            <div class="social">
+                                <a class="circle github" href="#">
+                                    <i class="fab fa-github fa-lg"></i>
+                                </a>
+                                <a id="google_login" class="circle google" href="#">
+                                    <i class="fab fa-google-plus fa-lg"></i>
+                                </a>
+                                <a id="facebook_login" class="circle facebook" href="#">
+                                    <i class="fab fa-facebook fa-lg"></i>
+                                </a>
+                            </div>
+                            <div class="division">
+                                <div class="line l"></div>
+                                    <span>o</span>
+                                <div class="line r"></div>
+                            </div>
+                            <div class="error"></div>
+                            <div class="form loginBox">
+                                <form method="" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Correo Electronico" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                                <input class="btn btn-default btn-login" type="button" value="Ingresar" onclick="loginAjax()">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                            <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                            <input id="email" class="form-control" type="text" placeholder="Correo Electronico" name="email">
+                            <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                            <input id="password_confirmation" class="form-control" type="password" placeholder="Confirmar Contraseña" name="password_confirmation">
+                            <input class="btn btn-default btn-register" type="button" value="Crear cuenta" name="commit">
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="forgot login-footer">
+                        <span>Deseo
+                            <a href="javascript: showRegisterForm();">crear una cuenta</a>
+                        ?</span>
+                    </div>
+                    <div class="forgot register-footer" style="display:none">
+                        <span>¿Ya tiene una cuenta?</span>
+                        <a href="javascript: showLoginForm();">Ingresar</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!--FIN LOGIN-->
+
         <!-- Portfolio Modals-->
        
         <!-- Modal 1-->
 
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade show" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -593,7 +720,7 @@
                                     <h2 class="text-uppercase">Prendas de Vestir</h2>
                                     <p class="item-intro text-muted">Tejidas con historia</p>
 
-                                    <!-- <img class="img-fluid d-block mx-auto" src="img/bufandas.jpeg" alt="" /> -->
+                                    <!-- <img class="img-responsive d-block mx-auto" src="img/bufandas.jpeg" alt="" /> -->
                                     <!-- CARRUSEL IMAGENES-->
 
                                   <div id="carousel1" class="carousel slide" data-ride="carousel">
