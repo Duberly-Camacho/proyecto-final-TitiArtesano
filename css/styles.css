@@ -10212,7 +10212,7 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-caption {
   text-align: center;
-  background-color: #fff;
+  
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -10464,7 +10464,7 @@ body { font-family: sans-serif; }
  }
 
  .masthead-mujer{
-  background-image: url("../img/produMujer/fondo.jpg");
+  background-image: url("../img/produMujer/fondo2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10472,7 +10472,7 @@ body { font-family: sans-serif; }
  }
 
  .masthead-hombre{
-  background-image: url("../img/produHombre/arteHombre.jpeg");
+  background-image: url("../img/produHombre/arteHombre2.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10526,3 +10526,4 @@ box-shadow: inset 0 0 0 3px #3a7999;}
   color: aliceblue;
   border-color: aliceblue;
 }
+
