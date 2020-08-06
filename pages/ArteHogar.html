@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Titiartesano</title>
+        <title>Titiartesano - Arte Hogar</title>
 
         
-        <link rel="icon" type="image/x-icon" href="../../img/icono.png" />
+        <link rel="icon" type="image/png" href="../img/index/icono.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         
@@ -25,10 +25,14 @@
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
         <!-- CDN - JQuery para botón de subir -->
-
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="../css/hogar.css">
+         <!-- LOGIN -->
+         <link href="../css/login-register.css" rel="stylesheet" />
+         <script src="../js/jquery-1.10.2.js" type="text/javascript"></script>
+         <script src="../js/bootstrap.js" type="text/javascript"></script>
+         <script src="../js/login-register.js" type="text/javascript"></script>
+ 
 
     </head>
 
@@ -76,9 +80,21 @@
                                 
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Moda Hombres</a></li>
+                        
                         <li class="nav-item dropdown">
-                            
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" >
+                                Moda Hombres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class=" nav-link js-scroll-trigger" href="ArteHombre.html">HOMBRES</a>
+                                <div class="dropdown-divider"></div>
+                                <a class=" nav-link js-scroll-trigger" href="ArteHombre.html#bufandas">Bufandas</a>
+                                <a class=" nav-link js-scroll-trigger" href="ArteHombre.html#mochilas">Mochilas</a>
+                                <a class=" nav-link js-scroll-trigger" href="ArteHombre.html#sombreros">Sombreros</a> 
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" >
                                 Arte Hogar
                             </a>
@@ -92,6 +108,11 @@
                                 <a class=" nav-link js-scroll-trigger" href="#jarrones">Jarrones</a>                                                                   
                                 
                             </div>
+                        </li>
+
+                        <li class="nav-item">                            
+                                     <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();"><i class="far fa-user-circle" ></i></button>                                     
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -103,76 +124,96 @@
         <header class="masthead masthead-arteHogar">
             <div class="container">
                 <div class="masthead-subheading">Alegra tus espacios...</div>
-                <div class="masthead-heading text-uppercase">HOGAR ARTE</div>
-                <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#">Conoce más</a>-->
+                <div class="masthead-heading text-uppercase">Arte Hogar</div>
+               
             </div>
         </header>
 <!-- ENCABEZADO-->
 
 
-<!-- Accesorios para el hogar-->
+<!-- Accesorios para hogar-->
 
+    
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Artesanías para el hogar</h2>
-                    <h3 class="section-subheading text-muted">Decora tus espacios con piezas originales, hechas a mano. Dale un toque de arte a tu cotidianidad.</h3>
+                    <h3 class="section-subheading text-muted">Decora tus espacios con piezas originales, hechas a mano y dale un toque de arte a tu cotidianidad.</h3>
                 </div>
-        
-    <!-- Mostrando subcategorías de arte para el hogar -->
+
+        <!-- Mostrando subcategorías de arte para mujeres -->
                 <div class="row justify-content-center">
-
-                    
-
                     <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link nav-link js-scroll-trigger" href="#adornos">
-                                <img class="img-thumbnail img-fluid " src="https://i.ibb.co/gjtnt4T/adorno2-1.jpg" alt="adorno2_1"  width="180"/>
-                                <h6 class="section-subheading text-muted pt-3">Adornos</h6>
+                                <img class="img-thumbnail " src="https://i.ibb.co/gjtnt4T/adorno2-1.jpg" alt="adorno2_1"   width="180"/>
                             </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Adornos</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link nav-link js-scroll-trigger" href="#cestas">
-                                <img class="img-thumbnail img-fluid" src="../img/produhogar/cestas y floreros/florero1_3.jpg" alt="florero1_3" width="180"/>
-                                <h6 class="section-subheading text-muted pt-3">Cestas y Floreros</h6>
+                                <img class="img-thumbnail" src="https://i.ibb.co/CQj7wXd/florero1-3.jpg" alt="florero1_3" width="180"/>
                             </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Cestas y Floreros</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link nav-link js-scroll-trigger" href="#hamacas">
-                                <img class="img-thumbnail img-fluid" src="../img/produhogar/hamacas/hamaca1_1.jpg" alt="hamaca1_1" width="180"/>
-                                <h6 class="section-subheading text-muted pt-3">Hamacas</h6>
+                                <img class="img-thumbnail" src="https://i.ibb.co/vm3dBJM/hamaca1-2.jpg" alt="hamaca1_1" width="180"/>
                             </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hamacas</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-4 mb-3 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link nav-link js-scroll-trigger" href="#jarrones">
-                                <img class="img-thumbnail img-fluid" src="../img/produhogar/jarrones/jarron3_1.jpg" alt="jarron3_1" width="180"/>
-                                <h6 class="section-subheading text-muted pt-3">Jarrones</h6>
+                                <img class="img-thumbnail" src="https://i.ibb.co/Xb0vvNp/jarron3-1.jpg" alt="jarron3_1" width="180"/>
                             </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Jarrones</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-        <!-- Subproducto adornos -->
-            <section class="subtitulos" id="adornos">
-                <div class="p-3 mb-3">
-                    <h4 >Adornos</h4>
-                    <h5>Armoniza tus espacios</h5>
-                </div> 
+    <!-- Portafolio por categoria de producto -->
+
+        <!-- Categoria Adornos -->
+        
+            <section class="page-section bg-light" id="adornos">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Adornos</h2>
+                    <h3 class="section-subheading text-muted">Escribir algo...</h3>
+                </div>
+
                 <div class="row">
+
                     <div class="col-lg-4 col-sm-5 mb-3">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img  class="img-responsive img-thumbnail img-fluid" src="https://i.ibb.co/HDhJfXP/adorno1-2.jpg" alt="adorno1_2" />
+                                <img  class="img-responsive img-thumbnail " src="https://i.ibb.co/HDhJfXP/adorno1-2.jpg" alt="adorno1_2" />
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-5 mb-3">
@@ -181,8 +222,13 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-responsive img-thumbnail img-fluid" src="https://i.ibb.co/gjtnt4T/adorno2-1.jpg" alt="adorno2_1" />
+                                <img class="img-responsive img-thumbnail " src="https://i.ibb.co/gjtnt4T/adorno2-1.jpg" alt="adorno2_1" />
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                             <div class="portfolio-caption">
                             </div>
                         </div>
@@ -193,16 +239,23 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-responsive img-thumbnail img-fluid" src="https://i.ibb.co/zP372rv/adorno3-1.jpg" alt="adorno3_1" />
+                                <img class="img-responsive img-thumbnail " src="https://i.ibb.co/zP372rv/adorno3-1.jpg" alt="adorno3_1" />
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                 </section>
-        <!-- Subproducto Cestas y floreros -->
-                <section class="subtitulos" id="cestas">
-                    <div class="p-3 mb-3" >
-                        <h4 >Cestas y floreros</h4>
-                        <h5>Armoniza tus espacios</h5>
+
+        <!-- Categoria Cestas y floreros -->
+
+                <section class="page-section bg-light " id="cestas">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Cestas y floreros</h2>
+                        <h3 class="section-subheading text-muted">Escribir algo...</h3>
                     </div>
                     <div class="row">
                     <div class="col-lg-4 col-sm-5 mb-3">
@@ -211,8 +264,13 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class=" img-thumbnail img-fluid" src="https://i.ibb.co/sCzWpcL/cesta1-1.jpg" alt="cesta1_1"/>
+                                <img class=" img-thumbnail img-responsive" src="https://i.ibb.co/SPp4ws4/cesta1-3.jpg" alt="cesta1_1"/>
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-5 mb-3">
@@ -221,8 +279,13 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class=" img-thumbnail img-fluid" src="https://i.ibb.co/2h1T92d/florero1-1.jpg" alt="florero1_1"/>
+                                <img class=" img-thumbnail img-responsive" src="https://i.ibb.co/2h1T92d/florero1-1.jpg" alt="florero1_1"/>
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                             <div class="portfolio-caption">
                             </div>
                         </div>
@@ -233,16 +296,23 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid img-thumbnail" src="https://i.ibb.co/vdwsDBc/florero2-1.jpg" alt="florero2_1"/>
+                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/vdwsDBc/florero2-1.jpg" alt="florero2_1"/>
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                 </section>
-            <!-- Hamacas -->
-                <section class="subtitulos" id="hamacas">
-                    <div class="p-3 mb-3">
-                        <h4 >Hamacas</h4>
-                        <h5>Armoniza tus espacios</h5>
+
+        <!--Categoria Hamacas -->
+
+                <section class="page-section bg-light " id="hamacas">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Hamacas</h2>
+                        <h3 class="section-subheading text-muted">Escribir algo...</h3>
                     </div>
                       
                     <div class="row">
@@ -252,37 +322,22 @@
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-thumbnail img-fluid" src="https://i.ibb.co/vm3dBJM/hamaca1-2.jpg" alt="hamaca1_2"/>
+                                    <img class="img-responsive img-thumbnail" src="https://i.ibb.co/vm3dBJM/hamaca1-2.jpg" alt="hamaca1_2"/>
                                 </a>
+
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Producto...</div>
+                                    <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-4 col-sm-5 mb-3">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal requiere nuevo modal">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-thumbnail img-fluid" src="g" alt="" />
-                                </a>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4 col-sm-5 mb-3">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal requiere nuevo modal">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-thumbnail img-fluid" src="" alt="" />
-                                </a>
-                            </div>
-                        </div> -->
                     </div>
             </section>
-        <!-- Jarrones -->
-                <section class="subtitulos" id="jarrones">
-                    <div class="p-3 mb-3">
-                        <h4>Jarrones</h4>
-                        <h5>Armoniza tus espacios</h5>
+        <!-- Categoria Jarrones -->
+                <section class="page-section bg-light " id="jarrones">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Jarrones</h2>
+                        <h3 class="section-subheading text-muted">Escribir algo...</h3>
                     </div>
                                
                 <div class="row">
@@ -292,8 +347,13 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-thumbnail img-fluid" src="https://i.ibb.co/V2S43rC/jarron1-1.jpg"  alt="jarron1_1"/>
+                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/V2S43rC/jarron1-1.jpg"  alt="jarron1_1"/>
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-5 mb-3">
@@ -302,8 +362,13 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-thumbnail img-fluid" src="https://i.ibb.co/g6KdsZW/jarron2-1.jpg" alt="jarron2_1"/>
+                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/g6KdsZW/jarron2-1.jpg" alt="jarron2_1"/>
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-5 mb-3">
@@ -312,25 +377,62 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-thumbnail img-fluid" src="https://i.ibb.co/Xb0vvNp/jarron3-1.jpg" alt="jarron3_1"/>
+                                <img class="img-responsive img-thumbnail" src="https://i.ibb.co/Xb0vvNp/jarron3-1.jpg" alt="jarron3_1"/>
                             </a>
+
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Producto...</div>
+                                <div class="portfolio-caption-subheading text-muted">Escribir algo...</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             </section>
-        </section>
+    </section>
+
+    <!-- BOTON CONTACTO-->
+             
+        <div class="dropup fixed-bottom ">
+            <button class="btn btn-info btn-fab btn-round dropdown-toggle  mb-2 mr-2 float-right" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-comments"></i>
+            </button>
+            <div class="dropdown-menu dropdownContact mr-3">
+                <form class="px-4 py-3">
+                    <div class="form-group">
+                        <h4>Contactanos!</h4>
+                        <p>Escribenos y cuentanos tus dudas o sugerencias.</p>
+                      </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Nombres</label>
+                    <input type="name" class="form-control" id="nombresCliente" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Apellidos</label>
+                    <input type="lastname" class="form-control" id="apellClientes" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Correo Electronico</label>
+                    <input type="email" class="form-control" id="correoCliente"placeholder="email@ejemplo.com">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Comentarios *" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                
+            </div>
+        </div>
 
 
-
-        <!-- Botón para ir hacia arriba en la página -->
+    <!-- Botón para ir hacia arriba en la página -->
 
         <span class="ir-arriba">
 
             <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fas fa-angle-up"></i>
                 Subir
-                </button>
+            </button>
         </span>
         
       
@@ -354,63 +456,148 @@
             </div>
         </footer>
 
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade show" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content anchoModal">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" class="img-responsive img-thumbnail img-fluid"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
+<!-- LOGIN-->
 
-                                  <!-- CARRUSEL IMAGENES-->
+    
+        <div class="modal fade login" id="loginModal">
+            <div class="modal-dialog login animated">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ingresar con...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="box">
+                        <div class="content">
+                            <div class="social">
+                                <a class="circle github" href="#">
+                                    <i class="fab fa-github fa-lg"></i>
+                                </a>
+                                <a id="google_login" class="circle google" href="#">
+                                    <i class="fab fa-google-plus fa-lg"></i>
+                                </a>
+                                <a id="facebook_login" class="circle facebook" href="#">
+                                    <i class="fab fa-facebook fa-lg"></i>
+                                </a>
+                            </div>
+                            <div class="division">
+                                <div class="line l"></div>
+                                    <span>o</span>
+                                <div class="line r"></div>
+                            </div>
+                            <div class="error"></div>
+                            <div class="form loginBox">
+                                <form method="" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Correo Electronico" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                                <input class="btn btn-default btn-login" type="button" value="Ingresar" onclick="loginAjax()">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                            <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                            <input id="email" class="form-control" type="text" placeholder="Correo Electronico" name="email">
+                            <input id="password" class="form-control" type="password" placeholder="Contraseña" name="password">
+                            <input id="password_confirmation" class="form-control" type="password" placeholder="Confirmar Contraseña" name="password_confirmation">
+                            <input class="btn btn-default btn-register" type="button" value="Crear cuenta" name="commit">
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="forgot login-footer">
+                        <span>Deseo
+                            <a href="javascript: showRegisterForm();">crear una cuenta</a>
+                        ?</span>
+                    </div>
+                    <div class="forgot register-footer" style="display:none">
+                        <span>¿Ya tiene una cuenta?</span>
+                        <a href="javascript: showLoginForm();">Ingresar</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
-                                  <div id="carousel1" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                                      <li data-target="#carousel1" data-slide-to="1"></li>
-                                      <li data-target="#carousel1" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner" role="listbox">
-                                      <!-- Slide One - -->
-                                      <div class="carousel-item active" style="background-image: url('https://i.ibb.co/PZN0nyJ/adorno1-3.jpg')">
-                                        <div class="carousel-caption d-none d-md-block"></div>
-                                      </div>
-                                      <!-- Slide Two - -->
-                                      <div class="carousel-item" style="background-image: url('https://i.ibb.co/HDhJfXP/adorno1-2.jpg')">
-                                        <div class="carousel-caption d-none d-md-block"></div>
-                                      </div>
-                                      <!-- Slide Three - -->
-                                      <div class="carousel-item" style="background-image: url('https://i.ibb.co/1rp9WC9/adorno1-1.jpg')">
-                                        <div class="carousel-caption d-none d-md-block"></div>
-                                      </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                          <span class="sr-only">Previous</span>
-                                        </a>
-                                    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                          <span class="sr-only">Next</span>
-                                        </a>
-                                  </div>
-                                <!-- FINAL CARRUSEL IMAGENES-->
+<!-- Portfolio Modals-->
+    <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
                                     
-                                <div>
-                                    <p>TÉCNICA: CESTERÍA </p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Jarrones</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
-                                </div>
+                                    <div class="modal-body">
+                                        <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
+                                        
+                                    <!-- CARRUSEL IMAGENES-->
 
+                                    <div id="carousel1" class="carousel slide mb-5" data-ride="carousel" >
+                                        <ol class="carousel-indicators">
+                                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel1" data-slide-to="1"></li>
+                                        <li data-target="#carousel1" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                        <!-- Slide One - -->
+                                        <div class="carousel-item active" style="background-image: url('https://i.ibb.co/PZN0nyJ/adorno1-3.jpg')">
+                                            <div class="carousel-caption d-none d-md-block"></div>
+                                        </div>
+                                        <!-- Slide Two - -->
+                                        <div class="carousel-item" style="background-image: url('https://i.ibb.co/HDhJfXP/adorno1-2.jpg')">
+                                            <div class="carousel-caption d-none d-md-block"></div>
+                                        </div>
+                                        <!-- Slide Three - -->
+                                        <div class="carousel-item" style="background-image: url('https://i.ibb.co/1rp9WC9/adorno1-1.jpg')">
+                                            <div class="carousel-caption d-none d-md-block"></div>
+                                        </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                            </a>
+                                        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                            </a>
+                                    </div>
+                                    <!-- FINAL CARRUSEL IMAGENES-->   
+                                    
+                                    <!-- Descripcion producto-->
+                                    <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -420,18 +607,25 @@
         </div>
 
         <!-- Modal 2-->
-        <div class="portfolio-modal modal fade show" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content anchoModal">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" class="img-responsive img-thumbnail img-fluid" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <div class="modal-body">
+                                        <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
 
                                     <!-- CARRUSEL IMAGENES-->
 
-                                  <div id="carousel2" class="carousel slide" data-ride="carousel">
+                                  <div id="carousel2" class="carousel slide mb-5" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                       <li data-target="#carousel2" data-slide-to="0" class="active"></li>
                                       <li data-target="#carousel2" data-slide-to="1"></li>
@@ -459,16 +653,30 @@
                                   </div>
                                 <!-- FINAL CARRUSEL IMAGENES-->
 
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: PALMA DE COCO</p>ARTESANO DE: MAGANGUE/BOLIVAR</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Bolsos</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -476,17 +684,27 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
 
-                                    <div id="carousel3" class="carousel slide" data-ride="carousel">
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <div class="modal-body">
+                                        <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
+
+                                    <!-- CARRUSEL IMAGENES-->
+
+                                    <div id="carousel3" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel3" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel3" data-slide-to="1"></li>
@@ -510,17 +728,32 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -528,17 +761,27 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
 
-                                    <div id="carousel4" class="carousel slide" data-ride="carousel">
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <div class="modal-body">
+                                        <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
+
+                                    <!-- CARRUSEL IMAGENES-->
+
+                                    <div id="carousel4" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel4" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel4" data-slide-to="1"></li>
@@ -564,17 +807,32 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -582,17 +840,28 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
 
-                                    <div id="carousel5" class="carousel slide" data-ride="carousel">
+    <!-- Modal 5-->
+
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <div class="modal-body">
+                                        <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
+
+                                    <!-- CARRUSEL IMAGENES-->
+
+                                    <div id="carousel5" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel5" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel5" data-slide-to="1"></li>
@@ -618,17 +887,32 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -636,17 +920,28 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+
+    <!-- Modal 6-->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+
+                <div class="modal-body text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                
                                 <div class="modal-body">
+                                    <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
 
-                                    <div id="carousel6" class="carousel slide" data-ride="carousel">
+                                <!-- CARRUSEL IMAGENES-->
+
+                                <div id="carousel6" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel6" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel6" data-slide-to="1"></li>
@@ -671,17 +966,33 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -690,17 +1001,27 @@
             </div>
         </div>
 
-        <!-- Modal 7-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+    <!-- Modal 7-->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+
+                <div class="modal-body text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                
                                 <div class="modal-body">
+                                    <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
 
-                                    <div id="carousel7" class="carousel slide" data-ride="carousel">
+                                <!-- CARRUSEL IMAGENES-->
+
+                                <div id="carousel7" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel7" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel7" data-slide-to="1"></li>
@@ -725,17 +1046,32 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -743,17 +1079,28 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 8-->
-        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+
+    <!-- Modal 8-->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+
+                <div class="modal-body text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                
                                 <div class="modal-body">
+                                    <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
 
-                                    <div id="carousel8" class="carousel slide" data-ride="carousel">
+                                <!-- CARRUSEL IMAGENES-->
+
+                                <div id="carousel8" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel8" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel8" data-slide-to="1"></li>
@@ -778,17 +1125,32 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                    </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -796,17 +1158,28 @@
                 </div>
             </div>
         </div>
-        <!-- Modal 9-->
-        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+        
+    <!-- Modal 9-->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+
+                <div class="modal-body text-center">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
+                                
                                 <div class="modal-body">
+                                    <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
 
-                                    <div id="carousel9" class="carousel slide" data-ride="carousel">
+                                <!-- CARRUSEL IMAGENES-->
+
+                                <div id="carousel9" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel9" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel9" data-slide-to="1"></li>
@@ -851,16 +1224,25 @@
         </div>
 
         <!-- Modal 10-->
-        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-labelledby="portfolioModal10Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-
-                                    <div id="carousel10" class="carousel slide" data-ride="carousel">
+    
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+    
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <div class="modal-body">
+                                        <h3 class="portfolio-modal-title text-secondary text-uppercase mb-4" id="portfolioModal2Label">Producto... </h3>
+    
+                                    <!-- CARRUSEL IMAGENES-->
+    
+                                    <div id="carousel10" class="carousel slide mb-5" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carousel10" data-slide-to="0" class="active"></li>
                                           <li data-target="#carousel10" data-slide-to="1"></li>
@@ -885,17 +1267,32 @@
                                               <span class="sr-only">Next</span>
                                             </a>
                                       </div>
-                                    <!-- Project Details Go Here-->
-                                    <p>TÉCNICA: TRENZADO</p> PRIMA: FIBRA DE PALMA DE WERREGUE</p>ARTESANO: : INDÍGENAS WOUNAAN</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Accesorios</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-cart-plus"></i>
-                                        Comprar
-                                    </button>
+                                    <!-- FINAL CARRUSEL IMAGENES-->
+
+                                     <!-- Descripcion producto-->
+                                     <div">
+                                        <dl class="row">
+                                            <dt class="col-sm-3">TÉCNICA</dt>
+                                            <dd class="col-sm-9">CESTERÍA.</dd>
+
+                                            <dt class="col-sm-3">PRIMA:</dt>
+                                            <dd class="col-sm-9">Fibra de palma de Werregue.</dd>
+                                            
+                                            <dt class="col-sm-3">Artesano:</dt>
+                                            <dd class="col-sm-9">Indigenas Wuonaan.</dd>
+
+                                            <dt class="col-sm-3">Fecha, Cliente, Categoria:</dt>
+                                            <dd class="col-sm-9">Enero 2020, Threads, Jarrones</dd>
+                                          
+                                        </dl>
+                                        <!-- Final descripcion producto-->
+                                        <button class="btn btn-primary mt-2" data-dismiss="modal" type="button">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Comprar
+                                        </button>
+                                     </div>
+                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -917,6 +1314,8 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="../js/scripts.js"></script>
         <script src="../js/arriba.js"></script>
+        <!-- Core theme JS-->
+        <script type="text/javascript">ready(function(){openLoginModal();});</script>
         
     </body>
 </html>

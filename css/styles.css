@@ -470,12 +470,14 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  margin-left: 25%;
+  align-content:center;
+  max-width: 200px;
+  height: 300px;
 }
 
 .img-thumbnail {
@@ -484,7 +486,7 @@ mark,
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
-  height: auto;
+  
 }
 
 .figure {
@@ -5476,7 +5478,7 @@ a.close.disabled {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 0.75rem;
   outline: 0;
 }
 
@@ -10010,11 +10012,11 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading {
@@ -10209,9 +10211,8 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+  
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -10223,14 +10224,14 @@ header.masthead .masthead-heading {
   font-style: italic;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+/*
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
-}
+}*/
 .portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
@@ -10463,12 +10464,20 @@ body { font-family: sans-serif; }
  }
 
  .masthead-mujer{
-  background-image: url("../img/produMujer/fondo.jpg");
+  background-image: url("../img/produMujer/fondo2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
  }
+
+ .masthead-hombre{
+  background-image: url("../img/produHombre/arteHombre2.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
  .btn.btn-round {
   border-radius: 30px;
@@ -10481,6 +10490,50 @@ color: #3a7999;
 box-shadow: inset 0 0 0 3px #3a7999;}
 
 .dropdownContact{
-
   background-color: white;
+}
+
+.subtitulos{
+  margin: 1% !important;
+  padding: 1% 0 0 0 !important;
+}
+
+.ir-arriba{
+  display: none;
+  position: fixed;
+  bottom: 9em;
+  right: 2em;
+}
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.42857;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  
+  border-radius: 35px;
+  font-size: 40px;
+  line-height: 1.33;
+  color: aliceblue;
+  border-color: aliceblue;
+}
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c;
+  opacity: 1;
 }
